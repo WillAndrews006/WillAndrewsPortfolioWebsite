@@ -1,0 +1,225 @@
+li{
+
+}
+.navbar{
+  visibility: hidden;
+}
+.landingPage {
+  position: relative;
+  width: 98vw;
+}
+
+.mainName {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 30%;
+  font-size: 10rem;
+  border-radius: 1rem;
+  background: rgb(33,171,205,.25);
+  width: 85%;
+}
+
+.scrollDownImage {
+  width: 5%;
+  position: absolute;
+  top: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.aboutMeSection {
+  position: relative;
+  height: 350vh;
+}
+.aboutMainHeader{
+  font-size: 5rem;
+}
+.aboutSecondaryHeader{
+  font-size: 3.5rem;
+}
+.aboutTitle{
+  background-color:rgb(33,171,205,.25);
+  border-radius: 1rem;
+  padding-top: 15%;
+  height: 15%;
+}
+.aboutSkillHeader{
+  font-size: 2.75rem;
+  margin: 2rem 0;
+}
+.leftFixedImage {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.skillsSection{
+  margin-top: 5rem;
+}
+.characteristicSection{
+margin-top: 10%;
+  background: rgb(33,171,205,.25);
+  border-radius: 1rem;
+  padding-top: 2rem;
+
+}
+
+.characteristicBackground{
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem;
+}
+#growth{
+  background-image: url("images/growth.png");
+  opacity: 1;
+}
+#teamPlayer{
+  background-image: url('images/teamPlayer.png');
+opacity: 1;
+}
+#coachable{
+  background-image: url("images/coachable.png");
+  opacity: 1;
+   background-position: center;
+}
+#results{
+  background-image: url("images/results.png");
+  opacity: 1;
+}
+#eager{
+  background-image: url("images/eager.png");
+  opacity: 1;
+}
+.characteristic{
+  font-size: 2rem;
+    background-color: rgb(33,171,205,.5);
+padding: 2rem;
+opacity: 1;
+}
+.skillsList{
+  list-style:none;
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 0;
+
+}
+.getToKnowMe{
+  margin-top: 20%;
+}
+.hobbiesList{
+    list-style:none;
+  margin: 0;
+  padding: 0;
+}
+.rightScrollContent {
+  float: left;
+  width: 50%;
+  height: 100%;
+  padding:5rem;
+}
+
+.pictureContainer {
+  width: 99%;
+  height: 50%;
+position: relative;
+}
+
+.profilePicture {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  width: 60%;
+  object-fit: contain;
+  border-radius: 100%;
+}
+
+.hobbiesGifContainer{
+  display: flex;
+  left: 7.5%;
+  position: relative;
+  background: #456268;
+  height: 13rem;
+  width: 13rem;
+  border-radius: .5rem;
+  float: left;
+  margin: 2rem .5rem;
+  overflow: hidden;
+  border: .5rem solid white;
+}
+.hobbiesGif{
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.overlayText{
+  color: #FCF8EC;
+  text-shadow: -1px 0 #222123, 0 1px #222123, 1px 0 #222123, 0 -1px #222123;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolioSection {
+  position: relative;
+  height: 50vh;
+  width: 100%;
+ margin: 0 ;
+ padding: 0 ;
+ background-color:rgb(33,171,205,.25);
+ border-radius: 1rem;
+}
+.portfolioHeader{
+  padding-top: 5rem;
+}
+.pictureContainer{
+margin-top: 5rem;
+margin-left: 25%;
+  width: 60%;
+
+}
+.pictureWrapper{
+  position: relative;
+  background: #456268;
+  height: 15rem;
+  width: 15rem;
+  border-radius: .5rem;
+  float: left;
+  overflow: hidden;
+  border: .5rem solid white;
+}
+.portfolioImage {
+  display: block;
+object-fit: contain;
+}
+
+.portfolioRow {
+  width: 100%;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 5vh;
+  clear: both;
+  display: block;
+}
+
+.footerImage {
+  height: 1.5rem;
+  width: 1.5rem;
+}
