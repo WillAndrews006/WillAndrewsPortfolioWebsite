@@ -1,29 +1,45 @@
-li{
-
+/*Hides the horizontal scroll bar*/
+body{
+  overflow-x:hidden;
 }
-.navbar{
+
+/* Formats the Footer */
+footer {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 5vh;
+  clear: both;
+  display: block;
+}
+
+/*Hides the navbar so that it can be revealed later with JS*/
+.navbar {
   visibility: hidden;
 }
-.landingPage {
+
+/* Sets the position of the landing page */
+.landingPage{
   position: relative;
-  width: 98vw;
 }
 
-.mainName {
+/* Cneters and configures the text "Will Andrews" that appears on the landing page */
+.landingPageHeader {
   position: absolute;
-  margin-left: auto;
-  margin-right: auto;
+  top: 30%;
   left: 0;
   right: 0;
-  text-align: center;
-  top: 30%;
-  font-size: 10rem;
-  border-radius: 1rem;
-  background: rgb(33,171,205,.25);
   width: 85%;
+  font-size: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background: rgb(33, 171, 205, .25);
+  border-radius: 1rem;
 }
 
-.scrollDownImage {
+/* This centers and sizes  the triangle image on the landing page */
+.downwardTriangleImage {
   width: 5%;
   position: absolute;
   top: 80%;
@@ -34,104 +50,28 @@ li{
   text-align: center;
 }
 
+/* Initalizes the height of the about me section */
 .aboutMeSection {
   position: relative;
   height: 350vh;
 }
-.aboutMainHeader{
-  font-size: 5rem;
-}
-.aboutSecondaryHeader{
-  font-size: 3.5rem;
-}
-.aboutTitle{
-  background-color:rgb(33,171,205,.25);
-  border-radius: 1rem;
-  padding-top: 15%;
-  height: 15%;
-}
-.aboutSkillHeader{
-  font-size: 2.75rem;
-  margin: 2rem 0;
-}
-.leftFixedImage {
+
+/* Creates a left side to the about me section  */
+.leftSectionAboutMeFixed {
   position: relative;
   float: left;
   width: 50%;
   height: 100%;
 }
-.skillsSection{
-  margin-top: 5rem;
-}
-.characteristicSection{
-margin-top: 10%;
-  background: rgb(33,171,205,.25);
-  border-radius: 1rem;
-  padding-top: 2rem;
 
-}
-
-.characteristicBackground{
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 2rem;
-}
-#growth{
-  background-image: url("images/growth.png");
-  opacity: 1;
-}
-#teamPlayer{
-  background-image: url('images/teamPlayer.png');
-opacity: 1;
-}
-#coachable{
-  background-image: url("images/coachable.png");
-  opacity: 1;
-   background-position: center;
-}
-#results{
-  background-image: url("images/results.png");
-  opacity: 1;
-}
-#eager{
-  background-image: url("images/eager.png");
-  opacity: 1;
-}
-.characteristic{
-  font-size: 2rem;
-    background-color: rgb(33,171,205,.5);
-padding: 2rem;
-opacity: 1;
-}
-.skillsList{
-  list-style:none;
-  font-size: 1.25rem;
-  margin: 0;
-  padding: 0;
-
-}
-.getToKnowMe{
-  margin-top: 20%;
-}
-.hobbiesList{
-    list-style:none;
-  margin: 0;
-  padding: 0;
-}
-.rightScrollContent {
-  float: left;
-  width: 50%;
-  height: 100%;
-  padding:5rem;
-}
-
-.pictureContainer {
-  width: 99%;
+/* Wraps the Image to initialize a width and height */
+.aboutMeImageWrapper {
+  position: relative;
   height: 50%;
-position: relative;
 }
 
-.profilePicture {
+/* Sets the about me image to an absolute postion that is later changed to fixed on scroll using JS */
+.aboutMeImage {
   position: absolute;
   top: 15%;
   left: 15%;
@@ -140,58 +80,154 @@ position: relative;
   border-radius: 100%;
 }
 
-.hobbiesGifContainer{
-  display: flex;
-  left: 7.5%;
-  position: relative;
-  background: #456268;
-  height: 13rem;
-  width: 13rem;
-  border-radius: .5rem;
+/* Creates a right side to the about me section  */
+.rightSectionAboutMeScrollable {
   float: left;
-  margin: 2rem .5rem;
-  overflow: hidden;
-  border: .5rem solid white;
+  width: 50%;
+  height: 100%;
 }
-.hobbiesGif{
-  object-fit: cover;
+
+/*Contains the first pieces of text on the right of the profile picture*/
+.aboutMeIntroductionTextContainer {
+  background-color: rgb(33, 171, 205, .25);
+  border-radius: 1rem;
+  padding-top: 10%;
+  height: 15%;
+}
+
+
+/* "I'm Will Andrews" and Portfolio Section Header */
+.mainHeader {
+  font-size: 5rem;
+}
+
+/* "Web Developer" Header */
+.aboutSecondaryHeader {
+  font-size: 3.5rem;
+}
+
+/* "and just who you've been looking for" text */
+.aboutIntroText{
+  font-size: 1.15rem;
+padding-top: 1rem;
+}
+
+/* Contains the text of skills I am proficient in*/
+.aboutMeSkillsSectionContainer {
+  margin-top: 5rem;
+  height: 10%;
+}
+
+/* Main Content headings for the about me section */
+.aboutMeMainContentHeader {
+  font-size: 2.75rem;
+  margin: 2rem 0;
+}
+
+/* Secondary Content headings for the about me section */
+.aboutMeSecondaryContentHeading{
+font-size: 2rem;
+}
+
+/* Formats the specific skills I am proficient in */
+.aboutMeSkillsList {
+  list-style: none;
+  font-size: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Initalizes the characteristic section */
+.aboutMeCharacteristicSectionContainer {
+  height: 35%;
+  margin: 10% 0;
+  background: rgb(33, 171, 205, .25);
+  border-radius: 1rem;
+  padding-top: 2rem;
+}
+
+/* Sets the basic shared settings for the background pictures in the characteristic section */
+.characteristicBackground {
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2rem;
+}
+
+.characterQuality {
+  font-size: 2.25rem;
+  background-color: rgb(33, 171, 205, .3);
+
+  /* This  margin helps adjust the size of the background color */
+  margin: .5rem 7rem;
+  padding: 2rem;
+  opacity: 1;
+}
+
+/* Initializes the Hobby Section */
+.aboutMeHobbySection {
+  margin-top: 20%;
+  height: 40%;
+}
+
+/* Container for repeating videos pertaining to hobbies */
+.hobbiesGifContainer {
+  position: relative;
+  display: flex;
+  float: left;
+  height: 20vh;
+  width: 15vw;
+  margin: 2rem .5rem;
+  background: rgb(33, 171, 205, .25) ;
+  border: .5rem solid white;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+/* The formating for the hobby videos */
+.hobbiesVideoGif {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  object-fit: cover;
 }
-.overlayText{
-  color: #FCF8EC;
-  text-shadow: -1px 0 #222123, 0 1px #222123, 1px 0 #222123, 0 -1px #222123;
+
+/* Text that overlays on Top of the hobbies videos */
+.hobbiesOverlayText {
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: 60%;
+   left: 50%;
+   transform: translate(-50%, -60%);
+   font-size: 1.25rem;
+
+
+  color: black;  
 }
-.portfolioSection {
+
+.hobbiesOverlaySmallText{
+  font-size: .75rem;
+}
+
+/* Initializes the portfolio section */
+.portfolioSectionContainer {
   position: relative;
   height: 50vh;
   width: 100%;
- margin: 0 ;
- padding: 0 ;
- background-color:rgb(33,171,205,.25);
- border-radius: 1rem;
+  margin: 0;
+  padding: 5% 0;
+  background-color: rgb(33, 171, 205, .25);
 }
-.portfolioHeader{
-  padding-top: 5rem;
-}
-.pictureContainer{
-margin-top: 5rem;
-margin-left: 25%;
-  width: 60%;
 
+/* The container for ALL of the portfolio Images */
+.portfolioSectionImagesContainer {
+  margin-top: 5rem;
+  margin-left: 25%;
+  width: 60%;
 }
-.pictureWrapper{
+
+/* The container for each individual portfolio Image */
+.portfolioImageContainer {
   position: relative;
   background: #456268;
   height: 15rem;
@@ -201,25 +237,61 @@ margin-left: 25%;
   overflow: hidden;
   border: .5rem solid white;
 }
+
+/* Formats the actual portfolio Image */
 .portfolioImage {
   display: block;
-object-fit: contain;
+  object-fit: contain;
 }
 
-.portfolioRow {
-  width: 100%;
+/* Overlay text on top of portfolio Images */
+.portfolioOverlayText{
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  color: #FCF8EC;
+  text-shadow: -1px 0 #222123, 0 1px #222123, 1px 0 #222123, 0 -1px #222123;
 }
 
-footer {
-  margin: 0;
-  padding: 0;
-  position: relative;
-  height: 5vh;
-  clear: both;
-  display: block;
-}
-
+/* Adjusts the height and width of Footer Images */
 .footerImage {
   height: 1.5rem;
   width: 1.5rem;
+}
+
+
+/* **************************************************************
+    IDS Section
+  ************************************************************** */
+
+/* These IDS all correspond to specific images in the  aboutMeCharacteristicSectionContainer */
+
+#growth {
+  background-image: url("images/growth.png");
+  opacity: 1;
+}
+
+#teamPlayer {
+  background-image: url('images/teamPlayer.png');
+  opacity: 1;
+}
+
+#coachable {
+  background-image: url("images/coachable.png");
+  opacity: 1;
+  background-position: bottom;
+}
+
+#results {
+  background-image: url("images/results.png");
+  opacity: 1;
+}
+
+#eager {
+  background-image: url("images/eager.png");
+  opacity: 1;
 }

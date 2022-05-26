@@ -30,46 +30,39 @@ This Code is a work in progress and will be cleaned up at the end of development
       <!-- Content within the Hamburger Menu -->
       <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
-          <h5 class="text-white h4">Collapsed content</h5>
-          <span class="text-muted">Toggleable via the navbar brand.</span>
+          <h5 class="text-white h4">Please Note!</h5>
+          <span class="text-muted">This website is still a work in progress <br> To Do: Add Portfolio Section <br> Add transitions and hover effects <br> Play around with Sizing of about Me Section <br> Add mobile Functionality </span>
         </div>
       </div>
     </nav>
 
-
     <!-- Landing Page -->
     <div class="landingPage ">
       <img src="images\WillAndrewsWebsiteHands.png" class="img-fluid" alt="">
-      <div class="mainNameBackground">
-        <h1 class="mainName">Will Andrews</h1>
-      </div>
-      <a href="#about"> <img src="images\scrollDown.png" class="scrollDownImage" alt=""></a>
-
-
+      <h1 class="landingPageHeader">Will Andrews</h1>
+      <a href="#aboutMe"> <img src="images\scrollDown.png" class="downwardTriangleImage" alt=""></a>
     </div>
 
-
     <!-- About Me Section  -->
-    <div class="aboutMeSection" id="about">
-      <div class="leftFixedImage">
-        <div class="pictureContainer">
-          <img src="images\PictureofWillAndrews.png" alt="" class="profilePicture ">
+    <div class="aboutMeSection" id="aboutMe">
+      <div class="leftSectionAboutMeFixed">
+        <div class="aboutMeImageWrapper">
+          <img src="images\PictureofWillAndrews.png" alt="" class="aboutMeImage">
         </div>
-
       </div>
-      <div class="rightScrollContent">
-        <div class="text-center aboutTitle">
-          <h1 class="aboutMainHeader">I'm Will Andrews,</h1>
-          <h2 class="aboutSecondaryHeader">A Web Developer</h2>
-          <p>(and just who you've been looking for)</p>
-
+      <div class="rightSectionAboutMeScrollable">
+        <div class="text-center aboutMeIntroductionTextContainer">
+          <h1 class="mainHeader">I'm Will Andrews,</h1>
+          <h2 class="aboutSecondaryHeader">Web Developer</h2>
+          <p class="aboutIntroText">(and just who you've been looking for*)</p>
         </div>
-        <div class="skillsSection">
-          <h2 class="aboutSkillHeader text-center">Developer and Designer</h2>
-          <div class="row text-center ">
+        <!-- Skills Section -->
+        <div class="aboutMeSkillsSectionContainer">
+          <h2 class="aboutMeMainContentHeader text-center">Developer and Designer</h2>
+          <div class="row text-center">
             <div class="col ">
-              <h3 class="skillHeading">Code</h3>
-              <ul class="skillsList">
+              <h2 class="aboutMeSecondaryContentHeading">Code</h2>
+              <ul class="aboutMeSkillsList">
                 <li>HTML/CSS</li>
                 <li>Javascript/Jquery</li>
                 <li>Node.js</li>
@@ -78,8 +71,8 @@ This Code is a work in progress and will be cleaned up at the end of development
               </ul>
             </div>
             <div class="col">
-              <h3>Design</h3>
-              <ul class="skillsList">
+              <h2 class="aboutMeSecondaryContentHeading">Design</h2>
+              <ul class="aboutMeSkillsList">
                 <li>Adobe Photoshop</li>
                 <li>Krita</li>
                 <li>Unity Engine</li>
@@ -89,8 +82,8 @@ This Code is a work in progress and will be cleaned up at the end of development
               </ul>
             </div>
             <div class="col">
-              <h3>UI/UX</h3>
-              <ul class="skillsList">
+              <h2 class="aboutMeSecondaryContentHeading">UI/UX</h2>
+              <ul class="aboutMeSkillsList">
                 <li>Adobe XD</li>
                 <li>Bootstrap</li>
                 <li>Wireframe.cc</li>
@@ -99,158 +92,170 @@ This Code is a work in progress and will be cleaned up at the end of development
             </div>
           </div>
         </div>
-        <div class="text-center characteristicSection ">
-          <h2 class="aboutSkillHeader">Why I'm a good fit for you</h2>
+
+        <!-- Characteristic Section -->
+        <div class="text-center aboutMeCharacteristicSectionContainer ">
+          <h1 class="aboutMeMainContentHeader">Why I'm a good fit for you</h1>
           <div class="characteristicBackground" id="growth">
-            <h4 class="characteristic">Growth Oriented</h4>
+            <h4 class="characterQuality">Growth Oriented</h4>
           </div>
           <div class="characteristicBackground" id="teamPlayer">
-            <h4 class="characteristic">Team Player</h4>
+            <h4 class="characterQuality">Team Player</h4>
           </div>
           <div class="characteristicBackground" id="coachable">
-            <h4 class="characteristic">Coachable</h4>
+            <h4 class="characterQuality ">Coachable</h4>
           </div>
           <div class="characteristicBackground" id="results">
-            <h4 class="characteristic">Result Oriented</h4>
+            <h4 class="characterQuality">Result Oriented</h4>
           </div>
           <div class="characteristicBackground" id="eager">
-            <h4 class="characteristic">Eager to get started</h4>
+            <h4 class="characterQuality">Eager to get started</h4>
           </div>
-
-
-
-
-        </div>
-        <div class="text-center getToKnowMe">
-          <h2 class="aboutSkillHeader">Get to Know Me</h2>
-          <!-- use gifs -->
-          <h3>Hobbies</h3>
-
-          <div class="hobbiesGifContainer">
-            <video loop muted playsinline class="hobbiesGif">
-              <source src="webm/css.webm" type="video/webm">
-              <source src="mp4/css.mp4" type="video/mp4">
-            </video>
-            <div class="overlayText">
-              <p>Gaming <br>
-                (Video, Board, Card doesn't matter to me)</p>
-            </div>
-          </div>
-          <div class="hobbiesGifContainer">
-            <video loop muted playsinline class="hobbiesGif">
-              <source src="webm/css.webm" type="video/webm">
-              <source src="mp4/css.mp4" type="video/mp4">
-            </video>
-            <div class="overlayText">
-              <p>Hiking (Mountains are my favorite)</p>
-            </div>
-          </div>
-          <div class="hobbiesGifContainer">
-            <video loop muted playsinline class="hobbiesGif">
-              <source src="webm/css.webm" type="video/webm">
-              <source src="mp4/css.mp4" type="video/mp4">
-            </video>
-            <div class="overlayText">
-              <p>Music (both making and enjoying)</p>
-            </div>
-          </div>
-          <div class="hobbiesGifContainer">
-            <video loop muted playsinline class="hobbiesGif">
-              <source src="webm/css.webm" type="video/webm">
-              <source src="mp4/css.mp4" type="video/mp4">
-            </video>
-            <div class="overlayText">
-              <p>Chess (I love a good battle of wits)</p>
-            </div>
-          </div>
-          <div class="hobbiesGifContainer">
-            <video loop muted playsinline class="hobbiesGif">
-              <source src="webm/css.webm" type="video/webm">
-              <source src="mp4/css.mp4" type="video/mp4">
-            </video>
-            <div class="overlayText">
-              <p>Running (but biking when I can)</p>
-            </div>
-          </div>
-          <div class="hobbiesGifContainer">
-            <video loop muted playsinline class="hobbiesGif">
-              <source src="webm/css.webm" type="video/webm">
-              <source src="mp4/css.mp4" type="video/mp4">
-            </video>
-            <div class="overlayText">
-              <p>Reading (Favorite Genre: Adventure )</p>
-            </div>
-          </div>
-          <div class="hobbiesGifContainer">
-            <video loop muted playsinline class="hobbiesGif">
-              <source src="webm/css.webm" type="video/webm">
-              <source src="mp4/css.mp4" type="video/mp4">
-            </video>
-            <div class="overlayText">
-              <p>Cooking (I make a mean Burrito)</p>
-            </div>
-          </div>
-          <div class="hobbiesGifContainer">
-            <video loop muted playsinline class="hobbiesGif">
-              <source src="webm/css.webm" type="video/webm">
-              <source src="mp4/css.mp4" type="video/mp4">
-            </video>
-            <div class="overlayText">
-              <p>Lifting Weights (I try not to skip leg day)</p>
-            </div>
-          </div>
-          <div class="hobbiesGifContainer">
-            <video loop muted playsinline class="hobbiesGif">
-              <source src="webm/css.webm" type="video/webm">
-              <source src="mp4/css.mp4" type="video/mp4">
-            </video>
-            <div class="overlayText">
-              <p>Visual Art (digital AND traditional)</p>
-            </div>
-          </div>
-
-
-
-
-
-
         </div>
 
+        <!-- Hobbies Section -->
+        <div class="text-center aboutMeHobbySection">
+          <h1 class="aboutMeMainContentHeader">What I do in my free time</h1>
+          <!-- Gaming Hobby -->
+          <div class="hobbiesGifContainer">
+            <video loop muted playsinline class="hobbiesVideoGif">
+              <source src="" type="video/webm">
+              <source src="" type="video/mp4">
+            </video>
+            <div class="hobbiesOverlayText">
+              <p>Gaming</p>
+              <p class="hobbiesOverlaySmallText">Video, Board, Card, whatever you got</p>
+            </div>
+          </div>
+          <!-- Hiking Hobby -->
+          <div class="hobbiesGifContainer">
+            <video loop muted playsinline class="hobbiesGif">
+              <source src="" type="video/webm">
+              <source src="" type="video/mp4">
+            </video>
+            <div class="hobbiesOverlayText">
+              <p>Hiking</p>
+              <p class="hobbiesOverlaySmallText">Mountains are my favorite</p>
+            </div>
+          </div>
+          <!-- Music Hobby -->
+          <div class="hobbiesGifContainer">
+            <video loop muted playsinline class="hobbiesGif">
+              <source src="" type="video/webm">
+              <source src="" type="video/mp4">
+            </video>
+            <div class="hobbiesOverlayText">
+              <p>Music</p>
+              <p class="hobbiesOverlaySmallText">both making and enjoying</p>
+            </div>
+          </div>
+
+          <!-- Chess Hobby -->
+          <div class="hobbiesGifContainer">
+            <video loop muted playsinline class="hobbiesGif">
+              <source src="" type="video/webm">
+              <source src="" type="video/mp4">
+            </video>
+            <div class="hobbiesOverlayText">
+              <p>Chess</p>
+              <p class="hobbiesOverlaySmallText">I love a good battle of wits</p>
+            </div>
+          </div>
+
+          <!-- Running Hobby -->
+          <div class="hobbiesGifContainer">
+            <video loop muted playsinline class="hobbiesGif">
+              <source src="" type="video/webm">
+              <source src="" type="video/mp4">
+            </video>
+            <div class="hobbiesOverlayText">
+              <p>Running</p>
+              <p class="hobbiesOverlaySmallText">but I like biking when I can</p>
+            </div>
+          </div>
+
+          <!-- Reading Hobby -->
+          <div class="hobbiesGifContainer">
+            <video loop muted playsinline class="hobbiesGif">
+              <source src="" type="video/webm">
+              <source src="" type="video/mp4">
+            </video>
+            <div class="hobbiesOverlayText">
+              <p>Reading</p>
+              <p class="hobbiesOverlaySmallText">My favorite Genre is Adventure</p>
+            </div>
+          </div>
+
+          <!-- Cooking Hobby -->
+          <div class="hobbiesGifContainer">
+            <video loop muted playsinline class="hobbiesGif">
+              <source src="" type="video/webm">
+              <source src="" type="video/mp4">
+            </video>
+            <div class="hobbiesOverlayText">
+              <p>Cooking</p>
+              <p class="hobbiesOverlaySmallText">I make a mean Burrito</p>
+            </div>
+          </div>
+
+          <!-- Lifting Hobby -->
+          <div class="hobbiesGifContainer">
+            <video loop muted playsinline class="hobbiesGif">
+              <source src="" type="video/webm">
+              <source src="" type="video/mp4">
+            </video>
+            <div class="hobbiesOverlayText">
+              <p>Lifting Weights </p>
+              <p class="hobbiesOverlaySmallText">I try not to skip leg day</p>
+            </div>
+          </div>
+
+          <!-- Art Hobby -->
+          <div class="hobbiesGifContainer">
+            <video loop muted playsinline class="hobbiesGif">
+              <source src="" type="video/webm">
+              <source src="" type="video/mp4">
+            </video>
+            <div class="hobbiesOverlayText">
+              <p>Visual Art</p>
+              <p class="hobbiesOverlaySmallText">digital AND traditional</p>
+            </div>
+          </div>
+        </div>
       </div>
-
     </div>
     <!-- Portfolio Section -->
-    <div class="portfolioSection">
-      <h1 class="text-center portfolioHeader">Portfolio Work</h1>
-      <div class="pictureContainer">
-        <div class="pictureWrapper">
+    <div class="portfolioSectionContainer">
+      <h1 class="text-center mainHeader">Portfolio Work</h1>
+      <div class="portfolioSectionImagesContainer ">
+        <div class="portfolioImageContainer">
           <img src="images\placeholder1.jpg" alt="" class="portfolioImage">
-          <div class="overlayText">
+          <div class="portfolioOverlayText">
             <p>Building the Website</p>
           </div>
         </div>
 
-        <div class="pictureWrapper">
+        <!-- <div class="portfolioImageContainer">
           <img src="images\placeholder2.jpg" class="portfolioImage" alt="">
           <div class="overlayText">
             <p>UI/UX Designing</p>
           </div>
         </div>
 
-        <div class="pictureWrapper">
+        <div class="portfolioImageContainer">
           <img src="images\placeholder3.jpg" class="portfolioImage" alt="">
           <div class="overlayText">
             <p>HTML/CSS Fundementals</p>
           </div>
         </div>
 
-        <div class="pictureWrapper">
+        <div class="portfolioImageContainer">
           <img src="images\placeholder1.jpg" alt="" class="portfolioImage">
           <div class="overlayText">
             <p>Javascript Games</p>
           </div>
 
-        </div>
+        </div> -->
 
 
 
