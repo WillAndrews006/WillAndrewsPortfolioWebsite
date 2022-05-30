@@ -1,5 +1,27 @@
 
 
+
+
+//Playing video on Hover
+var figure = $(".hobbiesGifContainer").hover(hoverVideo, hideVideo);
+
+function hoverVideo(e) {
+  $('video', this).get(0).play();
+}
+
+function hideVideo(e) {
+  $('video', this).get(0).pause();
+}
+
+
+
+
+
+
+
+
+
+//Affixing the About Me Image to the left side of the screen
 var affixTop = $('.aboutMeSection').offset().top;       // get initial position of the aboutMeSection 1058
 var unafix = 2000;
 $(window).scroll(function() {                  // assign scroll event listener

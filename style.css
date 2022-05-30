@@ -1,6 +1,6 @@
 /*Hides the horizontal scroll bar*/
-body{
-  overflow-x:hidden;
+body {
+  overflow-x: hidden;
 }
 
 /* Formats the Footer */
@@ -19,7 +19,7 @@ footer {
 }
 
 /* Sets the position of the landing page */
-.landingPage{
+.landingPage {
   position: relative;
 }
 
@@ -95,7 +95,6 @@ footer {
   height: 15%;
 }
 
-
 /* "I'm Will Andrews" and Portfolio Section Header */
 .mainHeader {
   font-size: 5rem;
@@ -107,9 +106,9 @@ footer {
 }
 
 /* "and just who you've been looking for" text */
-.aboutIntroText{
+.aboutIntroText {
   font-size: 1.15rem;
-padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 /* Contains the text of skills I am proficient in*/
@@ -125,8 +124,8 @@ padding-top: 1rem;
 }
 
 /* Secondary Content headings for the about me section */
-.aboutMeSecondaryContentHeading{
-font-size: 2rem;
+.aboutMeSecondaryContentHeading {
+  font-size: 2rem;
 }
 
 /* Formats the specific skills I am proficient in */
@@ -156,7 +155,6 @@ font-size: 2rem;
 .characterQuality {
   font-size: 2.25rem;
   background-color: rgb(33, 171, 205, .3);
-
   /* This  margin helps adjust the size of the background color */
   margin: .5rem 7rem;
   padding: 2rem;
@@ -177,17 +175,17 @@ font-size: 2rem;
   height: 20vh;
   width: 15vw;
   margin: 2rem .5rem;
-  background: rgb(33, 171, 205, .25) ;
-  border: .5rem solid white;
+  background: rgb(33, 171, 205, .25);
+  border: .5rem solid rgb(33, 171, 205, .25);
   border-radius: .5rem;
   overflow: hidden;
 }
 
 /* The formating for the hobby videos */
-.hobbiesVideoGif {
+.hobbiesGif {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 10;
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -197,15 +195,16 @@ font-size: 2rem;
 .hobbiesOverlayText {
   position: absolute;
   top: 60%;
-   left: 50%;
-   transform: translate(-50%, -60%);
-   font-size: 1.25rem;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  font-size: 1.25rem;
+  color: #FCF8EC;
+  text-shadow: -1px 0 #222123, 0 1px #222123, 1px 0 #222123, 0 -1px #222123;
 
-
-  color: black;  
 }
 
-.hobbiesOverlaySmallText{
+/*changes font size of smaller text */
+.hobbiesOverlaySmallText {
   font-size: .75rem;
 }
 
@@ -245,7 +244,7 @@ font-size: 2rem;
 }
 
 /* Overlay text on top of portfolio Images */
-.portfolioOverlayText{
+.portfolioOverlayText {
   position: absolute;
   display: flex;
   top: 0;
@@ -263,13 +262,10 @@ font-size: 2rem;
   width: 1.5rem;
 }
 
-
 /* **************************************************************
     IDS Section
   ************************************************************** */
-
 /* These IDS all correspond to specific images in the  aboutMeCharacteristicSectionContainer */
-
 #growth {
   background-image: url("images/growth.png");
   opacity: 1;
